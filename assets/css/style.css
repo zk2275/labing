@@ -76,6 +76,17 @@ img { max-width: 100%; height: auto; display: block; }
   border-bottom: 1px solid var(--hairline);
   padding-block: 1.75rem 0;
 }
+/* Institution badge sits to the left of the lab name (masthead, husainlab.org-style). */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+}
+.site-badge {
+  height: 54px;
+  width: auto;
+  flex: 0 0 auto;
+}
 .site-title {
   font-family: var(--font-head);
   font-weight: 600;
@@ -447,27 +458,13 @@ hr.divider {
   margin: 0;
   color: #F5ECDE;
 }
-.hero-tagline {
-  font-family: var(--font-head);
-  font-style: italic;
-  font-size: clamp(1.2rem, 3.2vw, 1.7rem);
-  line-height: 1.35;
-  margin: 0.7rem 0 0;
-  max-width: 36rem;
-  color: #EDE0CE;
-}
 
 /* ----------------------------------------------------- Pitt blue brand accent */
 /* Used on "University of Pittsburgh" to align with the university's colour. */
 .pitt { color: var(--pitt-blue); }
 
-/* ------------------------------------------------ Institution badge (top-left) */
-/* Home page only: a dedicated band above the site header, badge flush top-left. */
-.site-topbar { padding-top: 1.15rem; }
-.topbar-badge { height: 58px; width: auto; display: block; }
-
 /* ---------------------------------------------------- Affiliation block (home) */
-/* Department + street address, below the hero (badge lives in the top bar now). */
+/* Department + street address, below the hero. */
 .affiliation {
   padding-bottom: 1.9rem;
   margin-bottom: 2.25rem;
@@ -496,28 +493,6 @@ hr.divider {
   object-fit: cover;   /* a non-16:9 photo is centre-cropped rather than squashed */
   object-position: center;
 }
-
-/* ------------------------------------------------------- Home intro w/ portrait */
-.intro {
-  display: grid;
-  grid-template-columns: 190px 1fr;
-  gap: 2rem;
-  align-items: start;
-}
-.intro .portrait { margin: 0; }
-.intro .portrait img {
-  width: 190px;
-  border: 1px solid var(--hairline);
-  background: var(--bg-panel);
-}
-.intro .portrait figcaption {
-  margin-top: 0.5rem;
-  font-family: var(--font-head);
-  font-size: 1.1rem;
-  color: var(--text-muted);
-}
-.intro-body > :first-child { margin-top: 0; }
-.intro-body .lead { margin-top: 0; }
 
 /* ------------------------------------------------------------ Rolling gallery */
 /* Full-bleed auto-scrolling photo strip (home page, below the news list).
@@ -625,12 +600,11 @@ figure.research-figure figcaption {
   .pi-card { grid-template-columns: 1fr; gap: 1rem; }
   .pi-card .headshot { width: 8rem; }
   .lead { font-size: 1.2rem; }
-  .intro { grid-template-columns: 1fr; gap: 1.25rem; }
-  .intro .portrait img { width: 150px; }
   .people-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 1.5rem 1.25rem; }
   .member-card .avatar { max-width: 130px; }
   .marquee figure { width: 200px; }
   .marquee img { width: 200px; height: 142px; }
   .marquee { padding-block: 1.25rem 2.25rem; }
-  .topbar-badge { height: 46px; }
+  .site-badge { height: 44px; }
+  .brand { gap: 0.85rem; }
 }

@@ -13,19 +13,16 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Institution badge, top-left of the page (home only). Sits above the shared header. -->
-  <div class="site-topbar">
-    <div class="wrap">
-      <img class="topbar-badge" src="assets/img/School_of_Public_Health.png"
-           alt="University of Pittsburgh School of Public Health">
-    </div>
-  </div>
-
   <!-- ===== SHARED HEADER — keep identical across all pages (only aria-current moves) ===== -->
   <header class="site-header">
     <div class="wrap">
-      <a class="site-title" href="index.html">Ding Lab</a>
-      <p class="site-tagline">Biostatistics and Health Data Science &middot; <span class="pitt">University of Pittsburgh</span></p>
+      <div class="brand">
+        <img class="site-badge" src="assets/img/School_of_Public_Health.png" alt="University of Pittsburgh School of Public Health">
+        <div class="brand-text">
+          <a class="site-title" href="index.html">Ding Lab</a>
+          <p class="site-tagline">Biostatistics and Health Data Science &middot; <span class="pitt">University of Pittsburgh</span></p>
+        </div>
+      </div>
       <nav class="main-nav" aria-label="Primary">
         <ul>
           <li><a href="index.html" aria-current="page">Home</a></li>
@@ -47,7 +44,6 @@
   <section class="hero" aria-label="Introduction">
     <div class="hero-inner">
       <h1 class="hero-title">Ding Lab</h1>
-      <p class="hero-tagline">Principled statistical methods for complex biomedical data, in service of precision medicine.</p>
     </div>
   </section>
 
@@ -60,26 +56,20 @@
       </div>
     </section>
 
-    <section class="intro" aria-label="About the lab">
-      <figure class="portrait">
-        <img src="assets/img/Ding_Ying.jpg" alt="Ying Ding">
-        <figcaption>Ying Ding</figcaption>
-      </figure>
-      <div class="intro-body">
-        <p class="lead">The Ding Lab is the research group of <strong>Ying Ding</strong>, Professor
-        in the Department of Biostatistics and Health Data Science and Associate Dean for Graduate
-        Academic Affairs at the <span class="pitt">University of Pittsburgh</span>.</p>
+    <section aria-label="About the lab">
+      <p class="lead">The Ding Lab is the research group of <strong>Ying Ding</strong>, Professor
+      in the Department of Biostatistics and Health Data Science and Associate Dean for Graduate
+      Academic Affairs at the <span class="pitt">University of Pittsburgh</span>.</p>
 
-        <p>We develop rigorous statistical methodology for complex biomedical data &mdash;
-        semiparametric methods for time-to-event data, subgroup and individualized-effect inference
-        in precision medicine, and statistical and machine-learning approaches for high-dimensional
-        genetic and multi-omics data. The methods we build are shaped by real scientific questions,
-        developed hand in hand with our collaborators.</p>
+      <p>We develop rigorous statistical methodology for complex biomedical data &mdash;
+      semiparametric methods for time-to-event data, subgroup and individualized-effect inference
+      in precision medicine, and statistical and machine-learning approaches for high-dimensional
+      genetic and multi-omics data. The methods we build are shaped by real scientific questions,
+      developed hand in hand with our collaborators.</p>
 
-        <!-- TODO: trim or personalize this line in Dr. Ding's voice if desired -->
-        <p>We are a small, close group, and we care as much about how we work &mdash; carefully, and
-        generously with one another &mdash; as about what we publish.</p>
-      </div>
+      <!-- TODO: trim or personalize this line in Dr. Ding's voice if desired -->
+      <p>We are a small, close group, and we care as much about how we work &mdash; carefully, and
+      generously with one another &mdash; as about what we publish.</p>
     </section>
 
     <section aria-labelledby="interests-heading">
