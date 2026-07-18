@@ -121,13 +121,19 @@ In use:
 | `Ding_Ying.jpg` | Home intro portrait, People PI card | |
 | `public_health.jpg` | Rolling gallery | |
 | `teaching.jpg` | Teaching banner, rolling gallery | Banner is full-bleed 16:9 (`.page-banner`); natively 16:9, so no crop. |
-| `School_of_Public_Health.png` | Home affiliation badge | Official Pitt School of Public Health logo (transparent PNG). Sits in the `.affiliation` block below the hero. |
+| `School_of_Public_Health.png` | Home top bar (top-left) | Official Pitt School of Public Health logo (transparent PNG). Sits in `.site-topbar`, above the header, home page only. |
+| `<First>_<Last>.jpg/.png` | People — student headshots | One per current student (e.g. `Haoran_Hu.jpg`, `Zhuodiao_Kuang.png`). Square works best; shown as circles cropped near the top. |
 
 Still placeholders, swap when you have real files:
 
 - `figure-placeholder.svg` — three gallery tiles, and the four Research figures.
-- `avatar-placeholder.svg` — student headshots on People (square photos, shown as circles).
+- `avatar-placeholder.svg` — fallback student headshot (all current students now have real photos, so it's unused; keep it for the next new student until their photo arrives).
 - `banner-placeholder.svg`, `portrait-placeholder.svg` — unused; kept in case you want one back.
+
+To add a new student with a photo: drop `First_Last.jpg` in `assets/img/`, copy a
+`<figure class="member-card">` block on `people.html`, and point its `src`/`alt` at the file.
+If a face ends up cropped in the circle, tweak `object-position` on `.member-card .avatar`
+in `style.css` (or add an inline `style="object-position: center 30%"` to that one image).
 
 Update each image's `alt` text to describe the real photo. If you swap the hero for a
 brighter photo, deepen the overlay alpha in `style.css` (`.hero::before`) so the cream
