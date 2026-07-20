@@ -121,7 +121,7 @@ In use:
 | `Ding_Ying.jpg` | Home intro portrait, People PI card | |
 | `public_health.jpg` | Rolling gallery | |
 | `teaching.jpg` | Teaching banner, rolling gallery | Banner is full-bleed 16:9 (`.page-banner`); natively 16:9, so no crop. |
-| `School_of_Public_Health.png` | Site header, left of the lab name | Official Pitt School of Public Health logo (transparent PNG). Sits in `.brand` inside the shared header, so it shows on every page. |
+| `School_of_Public_Health.png` | Site header, left of the nav | Official Pitt School of Public Health logo (transparent PNG). Sits in `.site-header-inner`, to the left of the primary nav, on every page. (The header has no text title; the lab name appears in the home hero.) |
 | `<First>_<Last>.jpg/.png` | People — student headshots | One per current student (e.g. `Haoran_Hu.jpg`, `Zhuodiao_Kuang.png`). Square works best; shown as circles cropped near the top. |
 
 Still placeholders, swap when you have real files:

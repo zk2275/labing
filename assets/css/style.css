@@ -74,41 +74,24 @@ img { max-width: 100%; height: auto; display: block; }
 /* ---------------------------------------------------------------- Header */
 .site-header {
   border-bottom: 1px solid var(--hairline);
-  padding-block: 1.75rem 0;
+  padding-block: 1.2rem 0;
 }
-/* Institution badge sits to the left of the lab name (masthead, husainlab.org-style). */
-.brand {
+/* One masthead row: institution badge on the left, primary nav to its right. */
+.site-header-inner {
   display: flex;
-  align-items: center;
-  gap: 1.15rem;
+  align-items: flex-end;
+  gap: 0.75rem 2rem;
+  flex-wrap: wrap;
 }
 .site-badge {
-  height: 54px;
+  height: 46px;
   width: auto;
   flex: 0 0 auto;
-}
-.site-title {
-  font-family: var(--font-head);
-  font-weight: 600;
-  font-size: 1.9rem;
-  line-height: 1.1;
-  letter-spacing: 0.01em;
-  color: var(--accent);
-  text-decoration: none;
-  display: inline-block;
-}
-.site-title:hover,
-.site-title:focus-visible { color: var(--accent-dark); }
-.site-tagline {
-  margin: 0.15rem 0 0;
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  font-style: italic;
 }
 
 /* Navigation */
 .main-nav {
-  margin-top: 1.25rem;
+  margin: 0;
 }
 .main-nav ul {
   list-style: none;
@@ -610,6 +593,5 @@ figure.research-figure figcaption {
   .marquee figure { width: 200px; }
   .marquee img { width: 200px; height: 142px; }
   .marquee { padding-block: 1.25rem 2.25rem; }
-  .site-badge { height: 44px; }
-  .brand { gap: 0.85rem; }
+  .site-badge { height: 40px; }
 }
